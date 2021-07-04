@@ -1,0 +1,73 @@
+.modal {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $modal-bgr;
+}
+
+.modal.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+.modal__content {
+    position: absolute;
+    width: 96%;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: $white-color;
+
+    @media screen and (min-width: 480px) {
+        width: 450px;
+    }
+
+    @media screen and (min-width: 768px) {
+        //   width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.modal__tape {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid $modal-tape-border;
+    cursor: pointer;
+    background-color: $white-color;
+
+    &--close {
+        width: 15px;
+        height: 15px;
+        fill: currentColor;
+    }
+    &:hover,
+    &:focus {
+        border-color: $color-button-logo;
+        color: $color-button-logo;
+    }
+}
+
+.is-hidden {
+    visibility: inherit;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal {
+    transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}

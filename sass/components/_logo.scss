@@ -1,0 +1,23 @@
+.sait-nav__logo
+  {
+     font-family: Raleway;
+     font-weight: $font-weight-bold;
+     font-size: 26px;
+     line-height: 1.192;    
+     text-decoration: none;
+     color: $color-studio; 
+     width: 145px;     
+}
+.sait-nav__logo--web,
+.footer-nav__logo--web{
+     color: $color-button-logo;
+} 
+.footer-nav__logo{
+    font-family: Raleway;
+    font-weight: $font-weight-bold;
+    font-size: 26px;
+    line-height: 1.192;    
+    text-decoration: none;    
+    width: 145px;   
+    color: $white-color; 
+}

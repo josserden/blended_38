@@ -1,0 +1,44 @@
+.footer .container {
+    display: flex;
+    align-items: baseline;
+    padding-top: 60px;
+}
+.footer {
+    background: $hero-footer-background;
+}
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    width: 231px;
+    margin-right: 70px;
+}
+.footer-nav__mail {
+    font-weight: normal;
+    font-size: $font-size-text;
+    line-height: 1.714;
+    letter-spacing: $letter-spacing-text;
+    color: $footer-phone-mail;
+}
+.footer-nav__phone {
+    font-weight: normal;
+    font-size: $font-size-text;
+    line-height: 1.714;
+    letter-spacing: $letter-spacing-text;
+    color: $footer-phone-mail;
+}
+.footer-nav__address {
+    margin-top: 20px;
+}
+.footer-nav__contacts {
+    font-weight: normal;
+    font-size: $font-size-text;
+    line-height: 1.714;
+    letter-spacing: $letter-spacing-text;
+    color: $white-color;
+}
+.footer-nav__list {
+    margin-top: 9px;
+}
+.footer-nav__link {
+    margin-bottom: 60px;
+}

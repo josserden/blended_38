@@ -1,0 +1,83 @@
+.sait-nav {
+    display: flex;
+    align-items: center;
+}
+.header {
+    border-bottom: 1px solid $border-bottom-header;
+}
+.header .container {
+    display: flex;
+    align-items: center;
+}
+.sait-nav__navigation {
+    display: flex;
+    align-items: center;
+    margin-left: 93px;
+}
+.sait-nav__navigation li:not(:last-child) {
+    margin-right: 50px;
+}
+.sait-nav--active {
+    position: relative;
+    color: $color-button-logo;
+
+    &::after {
+        position: absolute;
+        bottom: 0;
+        display: block;
+        content: '';
+        width: 100%;
+        height: 4px;
+        background-color: $color-button-logo;
+        border-radius: 2px;
+        opacity: 1;
+        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:hover::after {
+        opacity: 1;
+        background-color: $color-button-logo;
+    }
+}
+
+.sait-nav__contacts {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+.sait-nav__contacts li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.sait-nav__mail,
+.sait-nav__phone {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: $font-size-text;
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+    color: $main-text-color;
+}
+.sait-nav__icon--mail {
+    fill: currentColor;
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+
+    &:hover,
+    &:focus {
+        fill: $color-button-logo;
+    }
+}
+.sait-nav__icon--phone {
+    width: 10px;
+    height: 16px;
+    fill: currentColor;
+    margin-right: 10px;
+
+    &:hover,
+    &:focus {
+        fill: $color-button-logo;
+    }
+}
