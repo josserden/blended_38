@@ -135,3 +135,14 @@
 // };
 
 // console.log(undefined === undefined && undefined === undefined);
+
+const atTheOldToad = {
+    potions: ['Speed potion', 'Dragon breath', 'Stone skin'],
+
+    updatePotionName(oldName, newName) {
+        // this.potions.splice(this.potions.indexOf(oldName), 1, newName);
+        // return this.potions;
+    },
+};
+
+console.log(atTheOldToad.updatePotionName('Dragon breath', 'Polymorth'));
