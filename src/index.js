@@ -31,15 +31,11 @@ const closeModal = () => {
 };
 
 const onOverlayClick = event => {
-  if (event.target === event.currentTarget) {
-    closeModal();
-  }
+  if (event.target === event.currentTarget) closeModal();
 };
 
 const onPressESC = event => {
-  if (event.code === 'Escape') {
-    closeModal();
-  }
+  if (event.code === 'Escape') closeModal();
 };
 
 const onPressArrow = event => {
