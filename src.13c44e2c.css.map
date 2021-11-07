@@ -1,0 +1,1 @@
+{"version":3,"sources":["sass/_example.scss"],"names":[],"mappings":"AAAA,KACE,eAAA,CAEA","file":"src.13c44e2c.css","sourceRoot":"../src","sourcesContent":[".box {\n  overflow: hidden;\n\n  height: 250px;\n}\n"]}
